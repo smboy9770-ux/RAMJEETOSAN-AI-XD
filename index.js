@@ -145,60 +145,53 @@ const clearTempDir = () => {
 
 setInterval(clearTempDir, 5 * 60 * 1000);
 
-//===================SESSION-AUTH============================
-if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
-    if (config.SESSION_ID && config.SESSION_ID.trim() !== "") {
-        const sessdata = config.SESSION_ID.replace("ADEEL-XMD~", '');
+// ==================== SESSION HANDLER ====================
+async function initializeSession() {
+    console.log("\n🔐 ==============================");
+    console.log("🔐 SESSION INITIALIZATION");
+    console.log("🔐 ==============================\n");
+    
+    const sessionDir = path.join(__dirname, 'sessions');
+    if (!fs.existsSync(sessionDir)) {
+        fs.mkdirSync(sessionDir, { recursive: true });
+    }
+    
+    const credsPath = path.join(sessionDir, 'creds.json');
+    
+    if (config.SESSION_ID && config.SESSION_ID.trim() !== "" && !fs.existsSync(credsPath)) {
         try {
-            const decodedData = Buffer.from(sessdata, 'base64').toString('utf-8');
-            fs.writeFileSync(__dirname + '/sessions/creds.json', decodedData);
-            console.log("✅ Session loaded from SESSION_ID");
-        } catch (err) {
-            console.error("❌ Error decoding session data:", err);
-            throw err;
-        }
-    } else {
-        console.log("⚡ No SESSION_ID found → Using Pairing System");
-        (async () => {
-            const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions');
-            const sock = makeWASocket({
-                auth: state,
-                printQRInTerminal: false,
-            });
-
-            if (!state.creds?.me) {
-                const readline = require('readline');
-                const rl = readline.createInterface({
-                    input: process.stdin,
-                    output: process.stdout
-                });
-                
-                rl.question("📱 Enter your WhatsApp number with country code: ", async (number) => {
-                    try {
-                        const code = await sock.requestPairingCode(number);
-                        console.log("🔑 Your Pairing Code:", code);
-                        console.log("➡️ Enter this code in WhatsApp to link your bot device.");
-                        rl.close();
-                    } catch (err) {
-                        console.error("❌ Error generating pairing code:", err);
-                        rl.close();
-                    }
-                });
-            }
-
-            sock.ev.on("creds.update", saveCreds);
-            sock.ev.on("connection.update", ({ connection }) => {
-                if (connection === "open") {
-                    console.log("✅ Bot Connected Successfully via Pairing!");
+            console.log("📦 Loading session from SESSION_ID...");
+            
+            let sessdata = config.SESSION_ID;
+            
+            const prefixes = ['ADEEL-XMD~', 'BOSS-MD~', 'EMYOU~', 'BOT~'];
+            for (const p of prefixes) {
+                if (sessdata.includes(p)) {
+                    sessdata = sessdata.split(p)[1];
+                    break;
                 }
-            });
-        })();
+            }
+            
+            sessdata = sessdata.trim();
+            while (sessdata.length % 4 !== 0) {
+                sessdata += '=';
+            }
+            
+            const decodedData = Buffer.from(sessdata, 'base64').toString('utf-8');
+            
+            try {
+                const jsonData = JSON.parse(decodedData);
+                fs.writeFileSync(credsPath, JSON.stringify(jsonData, null, 2));
+                console.log("✅ Session loaded successfully!");
+            } catch (jsonErr) {
+                console.log("⚠️ Not JSON, saving as raw");
+                fs.writeFileSync(credsPath, decodedData);
+            }
+        } catch (err) {
+            console.error("❌ Session error:", err.message);
+        }
     }
 }
-
-const express = require("express");
-const app = express();
-const port = process.env.PORT || 9090;
 
 // ==================== ULTRA FAST MESSAGE HANDLER ====================
 // 🔥 ADDED BY FAIZAN-MD OPTIMIZER
