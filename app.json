@@ -1,8 +1,8 @@
 {
-  "name": "ADEEL-XMD",
+  "name": "RAMJEET-XMD",
   "description": "Javascript WhatsApp bot made by ᗩᗪᗴᗴᒪ ᙭ᗰᗪ",
   "logo": "https://files.catbox.moe/pf9a6s.jpg",
-  "keywords": ["ADEEL-MD³⁰³"],
+  "keywords": ["RAMJEET-MD³⁰³"],
   "success_url": "/",
 
     "stack": "container",
@@ -10,13 +10,13 @@
     "SESSION_ID": {
       "description": "Put the session-id here.",
       "required": true,
-      "value": ""
+      "value": "ADEEL-XMD~eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiS0pucEZ4MldlY25xR0ZSZ0p3MkxzMjFrNnU0UUtXVzRjTmUyNXRNTWJFTT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiZ0RlT0tyaVVLeUtMR0JMYS9GcGx4N25TMDI3bmlyOHRyYVVJSW5JbllUYz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJNR3BwVFVjazNFSmtYbDEyU0lxVmxCOGljU1d1cTBtdy9FOTRSNW5pUTJNPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJBRGpZKzQ2dkpDYVdkYkg0aWpBM05xazJVNmNyTWVkbGRmZ0RJTjloUlZRPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImNKWHU3d0FvdjFNdkFtbFhJZjJyUWVBWGpxM3NnRGo2dFJlNzRFcm5qR3c9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImZaSjc2bXdjQzc3RU42RUJTUHNrMitNRHJ4aGZhQUxseUFQenNqQ3JHQ1E9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiRUlweVB1NEVoUmZyVlA0UGNyTjV2MjN5YjRZekRTbDdLYmVHdmlDd09rWT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiWC8zYWh3UjBmeVFoa2ljTXh5SThoNkJxYzNmdmtUOGF0cHQyLzlIYU1YYz0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkpZR3B0cUdEQ3VPZlNua0JPOHNOM2N5Qms0M0JPVSt3MlF1cXhMV1lRaWR6OUUrY1VENUc1SjVQUzd6NU9tWGRKaHNQRFdhQzN6MU41ODFKYXVXVWlRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MjMyLCJhZHZTZWNyZXRLZXkiOiI4YlJQYjhPNE16RElsOThXVzBObXJhSVZJM21WT1dQUStIV095clR2UFFrPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6ODEzLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6ODEzLCJhY2NvdW50U3luY0NvdW50ZXIiOjAsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJyZWdpc3RlcmVkIjp0cnVlLCJwYWlyaW5nQ29kZSI6IkZFRU1PME1EIiwibWUiOnsiaWQiOiI5MTc4NjY5Nzg0MDI6MjFAcy53aGF0c2FwcC5uZXQiLCJuYW1lIjoi4oCOIOKAjiDigI4g4oCOIOKAjiDigI4g4oCOIOKAjiDigI4g4oCOICDigI4g4oCOIOKAjiDigI4g4oCOIOKAjiDigI4g4oCOIOKAjiDigI4g4qS58J2Zjc2i8J2emvCdnpvMpPCdmYXwnZ6dzZzwnZ6d8J2eo+KAjtmg4qS4IiwibGlkIjoiMzk2NTU5ODY3NDU0Nzg6MjFAbGlkIn0sImFjY291bnQiOnsiZGV0YWlscyI6IkNKMzBnYkFHRUpTQmlNNEdHQUVnQUNnQSIsImFjY291bnRTaWduYXR1cmVLZXkiOiI1QmtZcCtLNkNvNkoxZXZTMktSbnM3Yjd2QU5vVmJvZ2daODVIdURvSVhzPSIsImFjY291bnRTaWduYXR1cmUiOiIwNVVhamg0QXZjSExvVVlRTlF4OXNwRGE1d0RqbEc3ZDdYbjFMbmlJYkV6Y2N3SVJMZE1KKzZHb2E3WVM5bUM0SDFCNzN5MmIxKys3bXQxZ0xCdnZCZz09IiwiZGV2aWNlU2lnbmF0dXJlIjoiS3NaUGFBL3lsYTUxa1JrRXJKNkpVeW5BSUoxTHhENnptRjdlTnR4WlFMdTArQWZHdjUrbXRoVGx6NGlqT0t4aVBXZ1hiNDBHWG5EUDgyTUlucVE0amc9PSJ9LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiI5MTc4NjY5Nzg0MDI6MjFAcy53aGF0c2FwcC5uZXQiLCJkZXZpY2VJZCI6MH0sImlkZW50aWZpZXJLZXkiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJCZVFaR0tmaXVncU9pZFhyMHRpa1o3TzIrN3dEYUZXNklJR2ZPUjdnNkNGNyJ9fV0sInBsYXRmb3JtIjoic21iYSIsInJvdXRpbmdJbmZvIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQ0FnSUVnZ04ifSwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzc0MzIxODI4LCJsYXN0UHJvcEhhc2giOiIzbWwxalMifQ=="
     },  
     
     "STICKER_NAME": {
       "description": "type your sticker pack name.",
       "required": false,
-      "value": "𝐀𝐃𝚵𝚵𝐋-𝐌𝐃"
+      "value": "RAMJEET-MD"
     }, 
       
     "PREFIX": {
@@ -28,7 +28,7 @@
     "MODE": {
       "description": "select your bot work type public-private-inbox-group.",
       "required": false,
-      "value": "public"
+      "value": "private"
       
     },
 
@@ -85,20 +85,20 @@
     "OWNER_NAME": {
       "description": "Type Bot Owner Name.",
       "required": false,
-      "value": "𝐌ᴀғɪᴀ 𝐀ᴅᴇᴇʟ"
+      "value": "LORD RAMJEET"
 }, 
 
     "OWNER_NUMBER": {
       "description": "put the owner number for bot.",
       "required": false,
-      "value": "923174838990"
+      "value": "917866978402"
 
     }, 
 
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "𝐀𝐃𝚵𝚵𝐋-𝐌𝐃"
+      "value": "RAMJEET-MD"
 
       }, 
 
@@ -124,13 +124,13 @@
     "MENU_IMAGE_URL": {
       "description": "add url for mention reply and menu if want.",
       "required": false,
-      "value": "https://files.catbox.moe/pf9a6s.jpg"
+      "value": "https://files.catbox.moe/9sn87j.jpg"
     },
     
      "DESCRIPTION": {
       "description": "add caption for menu and other",
       "required": false,
-      "value": "*📌 ᴘᴏᴡᴇʀ ʙʏ ᴍᴀғɪᴀ ᴀᴅᴇᴇʟ*"
+      "value": "*📌 ᴘᴏᴡᴇʀ ʙʏ LORD RAMJEET*"
     },
 
       "DELETE_LINKS": {
